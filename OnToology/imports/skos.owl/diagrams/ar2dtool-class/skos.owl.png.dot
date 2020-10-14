@@ -1,12 +1,12 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "skos:OrderedCollection" "skos:ConceptScheme" "skos:Concept" "skos:Collection" "71556e3a:1752491d6f7:-7ffc" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "skos:OrderedCollection" "skos:ConceptScheme" "skos:Concept" "skos:Collection" "1d7a7b71:1752496de9b:-7ffc" ; /*classes style*/
 	"skos:narrowerTransitive" -> "skos:semanticRelation" [ label = "rdfs:subPropertyOf" ];
-	"NULL" -> "71556e3a:1752491d6f7:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> "1d7a7b71:1752496de9b:-7ffb" [ label = "owl:unionOf" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
-	"NULL" -> "71556e3a:1752491d6f7:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "1d7a7b71:1752496de9b:-7ffa" [ label = "rdf:rest" ];
 	"NULL" -> "skos:Collection" [ label = "rdf:first" ];
 	"skos:closeMatch" -> "skos:mappingRelation" [ label = "rdfs:subPropertyOf" ];
 	"skos:Concept" -> "skos:ConceptScheme" [ label = "owl:disjointWith" ];
@@ -30,7 +30,7 @@ node [shape = rectangle, color="orange"]; "skos:OrderedCollection" "skos:Concept
 	"skos:OrderedCollection" -> "owl:Thing" [ label = "skos:memberList" ];
 	"skos:Concept" -> "skos:ConceptScheme" [ label = "skos:topConceptOf" ];
 	"skos:Concept" -> "skos:Concept" [ label = "skos:semanticRelation" ];
-	"skos:Collection" -> "71556e3a:1752491d6f7:-7ffc" [ label = "skos:member" ];
+	"skos:Collection" -> "1d7a7b71:1752496de9b:-7ffc" [ label = "skos:member" ];
 	"skos:ConceptScheme" -> "skos:Concept" [ label = "skos:hasTopConcept" ];
 	"owl:Thing" -> "skos:ConceptScheme" [ label = "skos:inScheme" ];
 
