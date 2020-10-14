@@ -1,13 +1,13 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "-78629d83:175267bd38a:-7ffc" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "-587a8215:175268b7ab4:-7ffc" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
 	"dc:language" -> "http://www.ietf.org/rfc/rfc4646.txt" [ label = "rdfs:seeAlso" ];
+	"NULL" -> "-587a8215:175268b7ab4:-7ffb" [ label = "owl:unionOf" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "skos:Collection" [ label = "rdf:first" ];
-	"NULL" -> "-78629d83:175267bd38a:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "-587a8215:175268b7ab4:-7ffa" [ label = "rdf:rest" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
-	"NULL" -> "-78629d83:175267bd38a:-7ffb" [ label = "owl:unionOf" ];
 	"skos:closeMatch" -> "skos:mappingRelation" [ label = "rdfs:subPropertyOf" ];
 	"dc:coverage" -> "http://www.getty.edu/research/tools/vocabulary/tgn/index.html" [ label = "rdfs:seeAlso" ];
 	"skos:relatedMatch" -> "skos:related" [ label = "rdfs:subPropertyOf" ];
@@ -36,7 +36,7 @@ node [shape = rectangle, color="orange"]; "-78629d83:175267bd38a:-7ffc" "skos:Or
 	"skos:OrderedCollection" -> "owl:Thing" [ label = "skos:memberList" ];
 	"skos:Concept" -> "skos:ConceptScheme" [ label = "skos:topConceptOf" ];
 	"skos:Concept" -> "skos:Concept" [ label = "skos:semanticRelation" ];
-	"skos:Collection" -> "-78629d83:175267bd38a:-7ffc" [ label = "skos:member" ];
+	"skos:Collection" -> "-587a8215:175268b7ab4:-7ffc" [ label = "skos:member" ];
 	"skos:ConceptScheme" -> "skos:Concept" [ label = "skos:hasTopConcept" ];
 	"owl:Thing" -> "skos:ConceptScheme" [ label = "skos:inScheme" ];
 
