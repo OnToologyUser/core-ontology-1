@@ -1,13 +1,9 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "6e089596:17527019e0f:-7ffc" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "-5fc1d6ba:175271a989c:-7ffc" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
+	"skos:narrowerTransitive" -> "skos:semanticRelation" [ label = "rdfs:subPropertyOf" ];
 	"dc:language" -> "http://www.ietf.org/rfc/rfc4646.txt" [ label = "rdfs:seeAlso" ];
-	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
-	"NULL" -> "skos:Collection" [ label = "rdf:first" ];
-	"NULL" -> "6e089596:17527019e0f:-7ffa" [ label = "rdf:rest" ];
-	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
-	"NULL" -> "6e089596:17527019e0f:-7ffb" [ label = "owl:unionOf" ];
 	"skos:closeMatch" -> "skos:mappingRelation" [ label = "rdfs:subPropertyOf" ];
 	"dc:coverage" -> "http://www.getty.edu/research/tools/vocabulary/tgn/index.html" [ label = "rdfs:seeAlso" ];
 	"skos:relatedMatch" -> "skos:related" [ label = "rdfs:subPropertyOf" ];
@@ -32,11 +28,15 @@ node [shape = rectangle, color="orange"]; "6e089596:17527019e0f:-7ffc" "skos:Ord
 	"skos:narrowMatch" -> "skos:mappingRelation" [ label = "rdfs:subPropertyOf" ];
 	"skos:narrower" -> "skos:narrowerTransitive" [ label = "rdfs:subPropertyOf" ];
 	"dc:date" -> "http://www.w3.org/TR/NOTE-datetime" [ label = "rdfs:seeAlso" ];
-	"skos:narrowerTransitive" -> "skos:semanticRelation" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "skos:Collection" [ label = "rdf:first" ];
+	"NULL" -> "-5fc1d6ba:175271a989c:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
+	"NULL" -> "-5fc1d6ba:175271a989c:-7ffb" [ label = "owl:unionOf" ];
 	"skos:OrderedCollection" -> "owl:Thing" [ label = "skos:memberList" ];
 	"skos:Concept" -> "skos:ConceptScheme" [ label = "skos:topConceptOf" ];
 	"skos:Concept" -> "skos:Concept" [ label = "skos:semanticRelation" ];
-	"skos:Collection" -> "6e089596:17527019e0f:-7ffc" [ label = "skos:member" ];
+	"skos:Collection" -> "-5fc1d6ba:175271a989c:-7ffc" [ label = "skos:member" ];
 	"skos:ConceptScheme" -> "skos:Concept" [ label = "skos:hasTopConcept" ];
 	"owl:Thing" -> "skos:ConceptScheme" [ label = "skos:inScheme" ];
 
