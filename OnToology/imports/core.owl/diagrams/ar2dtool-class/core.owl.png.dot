@@ -1,16 +1,16 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "core:Slot" "core:OrderedList" "-7e4ec656:17526e7faa6:-7ff7" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "core:Slot" "core:OrderedList" "33c29cff:1752701203c:-7ff7" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
 	"dc:language" -> "http://www.ietf.org/rfc/rfc4646.txt" [ label = "rdfs:seeAlso" ];
 	"NULL" -> "core:previous" [ label = "owl:onProperty" ];
-	"NULL" -> "-7e4ec656:17526e7faa6:-7ff6" [ label = "owl:unionOf" ];
+	"NULL" -> "33c29cff:1752701203c:-7ff5" [ label = "rdf:rest" ];
 	"NULL" -> "core:length" [ label = "owl:onProperty" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
-	"NULL" -> "-7e4ec656:17526e7faa6:-7ff5" [ label = "rdf:rest" ];
 	"NULL" -> "core:next" [ label = "owl:onProperty" ];
-	"NULL" -> "core:index" [ label = "owl:onProperty" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "core:index" [ label = "owl:onProperty" ];
+	"NULL" -> "33c29cff:1752701203c:-7ff6" [ label = "owl:unionOf" ];
 	"NULL" -> "core:ordered_list" [ label = "owl:onProperty" ];
 	"NULL" -> "skos:Collection" [ label = "rdf:first" ];
 	"skos:closeMatch" -> "skos:mappingRelation" [ label = "rdfs:subPropertyOf" ];
@@ -48,7 +48,7 @@ node [shape = rectangle, color="orange"]; "core:Slot" "core:OrderedList" "-7e4ec
 	"core:Slot" -> "owl:Thing" [ label = "core:item" ];
 	"core:OrderedList" -> "xsd:nonNegativeInteger" [ label = "core:length" ];
 	"core:OrderedList" -> "core:Slot" [ label = "core:slot" ];
-	"skos:Collection" -> "-7e4ec656:17526e7faa6:-7ff7" [ label = "skos:member" ];
+	"skos:Collection" -> "33c29cff:1752701203c:-7ff7" [ label = "skos:member" ];
 	"core:Slot" -> "core:Slot" [ label = "core:next" ];
 	"skos:ConceptScheme" -> "skos:Concept" [ label = "skos:hasTopConcept" ];
 	"owl:Thing" -> "skos:ConceptScheme" [ label = "skos:inScheme" ];
