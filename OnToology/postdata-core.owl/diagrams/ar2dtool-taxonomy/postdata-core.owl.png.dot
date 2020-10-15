@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:Role" "base:OrderedTextUnitList" "agentrole:Agent" "http://iflastandards.info/ns/fr/frbr/frbroo/F22" "http://www.europeana.eu/schemas/edm/Agent" "base:Agent" "base:CreatorRole" "base:Person" "base:Organisation" "http://www.europeana.eu/schemas/edm/Place" "base:Redaction" "base:Ensemble" "foaf:Person" "http://www.europeana.eu/schemas/edm/Event" "base:TextUnit" "http://iflastandards.info/ns/fr/frbr/frbroo/F1" "foaf:Organization" "http://www.europeana.eu/schemas/edm/ProvidedCHO" "base:Place" "base:Event" "3790fe0e:1752bc5f850:-7fbc" "base:PoeticWork" "http://iflastandards.info/ns/fr/frbr/frbroo/F17" "owl:Thing" "objectrole:Role" "objectrole:Object" "olo:Slot" "olo:OrderedList" "classification:Concept" ; /*classes style*/
+node [shape = rectangle, color="black"]; "base:Role" "base:OrderedTextUnitList" "agentrole:Agent" "http://iflastandards.info/ns/fr/frbr/frbroo/F22" "http://www.europeana.eu/schemas/edm/Agent" "base:Agent" "base:CreatorRole" "base:Person" "base:Organisation" "http://www.europeana.eu/schemas/edm/Place" "base:Redaction" "base:Ensemble" "foaf:Person" "http://www.europeana.eu/schemas/edm/Event" "base:TextUnit" "http://iflastandards.info/ns/fr/frbr/frbroo/F1" "foaf:Organization" "-37e20f5:1752bcc9ee0:-7fbc" "http://www.europeana.eu/schemas/edm/ProvidedCHO" "base:Place" "base:Event" "base:PoeticWork" "http://iflastandards.info/ns/fr/frbr/frbroo/F17" "owl:Thing" "objectrole:Role" "objectrole:Object" "olo:Slot" "olo:OrderedList" "classification:Concept" ; /*classes style*/
 	"base:Redaction" -> "http://iflastandards.info/ns/fr/frbr/frbroo/F22" [ label = "rdfs:subClassOf" ];
 	"base:Role" -> "objectrole:Role" [ label = "rdfs:subClassOf" ];
 	"base:Event" -> "http://www.europeana.eu/schemas/edm/Event" [ label = "rdfs:subClassOf" ];
@@ -13,7 +13,7 @@ node [shape = rectangle, color="black"]; "base:Role" "base:OrderedTextUnitList" 
 	"base:PoeticWork" -> "http://iflastandards.info/ns/fr/frbr/frbroo/F1" [ label = "rdfs:subClassOf" ];
 	"base:TextUnit" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
 	"agentrole:Agent" -> "objectrole:Object" [ label = "rdfs:subClassOf" ];
-	"base:Ensemble" -> "3790fe0e:1752bc5f850:-7fbc" [ label = "rdfs:subClassOf" ];
+	"base:Ensemble" -> "-37e20f5:1752bcc9ee0:-7fbc" [ label = "rdfs:subClassOf" ];
 	"base:Ensemble" -> "http://iflastandards.info/ns/fr/frbr/frbroo/F17" [ label = "rdfs:subClassOf" ];
 	"base:OrderedTextUnitList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
 	"base:Agent" -> "agentrole:Agent" [ label = "rdfs:subClassOf" ];
